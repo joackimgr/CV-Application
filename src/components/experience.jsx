@@ -1,6 +1,6 @@
 function Experience(props) {
 
-    return <>
+    return <div className="experience">
             <h2>Experience</h2>
             <label htmlFor="company">Company</label>
             <input type="text" id="company" value={props.company} onChange = {(e) => (props.onExpChange({...props, company : e.target.value}))}/>
@@ -12,7 +12,7 @@ function Experience(props) {
             <input type="Date" id="dateFrom" value={props.dateFrom} onChange={(e) => (props.onExpChange({...props, dateFrom : e.target.value}))}/>
             <label htmlFor="dateTo">To:</label>
             <input type="Date" id="dateTo" value={props.dateTo} onChange={(e) => (props.onExpChange({...props, dateTo: e.target.value}))}/>
-        </>
+        </div>
 }
 
 export default Experience

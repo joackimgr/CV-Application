@@ -1,6 +1,6 @@
 function PersonalInfo(props) {
 
-    return <>
+    return <div className="info">
             <h2>Personal Information</h2>
             <label htmlFor="">Name</label>
             <input type="text" value = {props.name} onChange = {(e) => (props.onInfoChange({...props, name : e.target.value}))}/>
@@ -8,7 +8,7 @@ function PersonalInfo(props) {
             <input type="text" value = {props.email} onChange = {(e) => (props.onInfoChange({...props, email: e.target.value}))}/>
             <label htmlFor="">Phone</label>
             <input type="text" value= {props.phone} onChange = {(e) => (props.onInfoChange({...props, phone: e.target.value}))}/>
-        </>
+        </div>
 }
 
 export default PersonalInfo
