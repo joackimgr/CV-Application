@@ -5,9 +5,13 @@ function PersonalInfo(props) {
             <label htmlFor="">Name</label>
             <input type="text" value = {props.name} onChange = {(e) => (props.onInfoChange({...props, name : e.target.value}))}/>
             <label htmlFor="">Email</label>
-            <input type="text" value = {props.email} onChange = {(e) => (props.onInfoChange({...props, email: e.target.value}))}/>
+            <input type="text" email = {props.email} onChange = {(e) => (props.onInfoChange({...props, email: e.target.value}))}/>
             <label htmlFor="">Phone</label>
-            <input type="text" value= {props.phone} onChange = {(e) => (props.onInfoChange({...props, phone: e.target.value}))}/>
+            <input type="tel" value= {props.phone} onChange = {(e) => (props.onInfoChange({...props, phone: e.target.value}))}/>
+            <div className="buttons">
+                <button type="submit">Submit</button>
+                <button>Edit</button>
+            </div>
         </div>
 }
 

@@ -12,6 +12,10 @@ function Experience(props) {
             <input type="Date" id="dateFrom" value={props.dateFrom} onChange={(e) => (props.onExpChange({...props, dateFrom : e.target.value}))}/>
             <label htmlFor="dateTo">To:</label>
             <input type="Date" id="dateTo" value={props.dateTo} onChange={(e) => (props.onExpChange({...props, dateTo: e.target.value}))}/>
+            <div className="buttons">
+                <button type="submit">Submit</button>
+                <button>Edit</button>
+            </div>
         </div>
 }
 

@@ -8,6 +8,10 @@ function Education(props) {
             <input type="text" value={props.title} onChange = {(e) => (props.onEduChange({...props, title : e.target.value}))}/>
             <label htmlFor="">Date</label>
             <input type="date" value={props.date} onChange = {(e) => (props.onEduChange({...props, date : e.target.value}))}/>
+            <div className="buttons">
+                <button type="submit">Submit</button>
+                <button>Edit</button>
+            </div>
         </div>
 }
 
