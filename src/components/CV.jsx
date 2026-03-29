@@ -4,9 +4,9 @@ import Education from './education'
 import Experience from './experience'
 
 function CV() {
-    const [info, setInfo] = useState({name:"", email:"", phone:""})
-    const [edu, setEdu] = useState({school:"", title:"", date:""})
-    const [exp, setExp] = useState({company:"", position:"", responsibilities:"", dateFrom:"", dateTo:""})
+    const [info, setInfo] = useState({name:"Name", email:"Email", phone:"1234567890"})
+    const [edu, setEdu] = useState({school:"School", title:"Title", date:"01/01/2026"})
+    const [exp, setExp] = useState({company:"Company", position:"Position", responsibilities:"Responsibilities", dateFrom:"01/01/2025", dateTo:"31/12/2025"})
 
     return (
         <>  
